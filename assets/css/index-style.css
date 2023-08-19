@@ -1,0 +1,122 @@
+/*style do index , login do sistema*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(http://localhost/ERPWEB/image/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:100%;  
+}
+h1, h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #272262;
+}
+.todo-container{
+    margin:4rem auto;
+    position: relative;
+    max-width: 50%;
+    height: auto;
+    background: #fdfdfd8f;
+    padding: 2rem;
+    border: 1px solid #272727;
+    display: flex;
+    flex-direction: column;
+
+}
+input{
+    display:block;
+    margin:10px auto;
+    width:80%;
+}
+.label-float{
+    position: relative;
+    padding:10px 0px 10px 0px;
+}
+.label-float input{
+    width:100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid #272262;
+    outline: none;
+    font-size: 20px;
+    transition: all .5s ease-in-out;
+}
+.label-float label{
+    color: #272262;
+    position:absolute;
+    top: 12px ;
+    left: 0;
+    margin-top: 15px;
+    transition: all .5s ease-out;
+}
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size:  15px;
+    margin-top: -12px;
+    color: #272262;
+}
+button{
+    color: #272262;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    border-color: #272262;
+    outline: none;
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+button:hover{
+    background-color: #272262;
+    color:#ccc;
+}
+.fa-eye {
+    position: absolute;
+    cursor: pointer;
+    color: #272262;
+    width: 25px;
+    height: 25px;
+    top: 23px;
+    right: 10px;
+}
+.linha-central{
+    display: flex;
+    justify-content: center;
+}
+hr{
+    margin: 10% 0%;
+    width:60%;
+}
+p{
+    color:#272262;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+footer{
+    justify-content: center;
+    color: #272262;
+}
+.float-right{
+    color: #272262;
+    float: right;
+}
+a{
+    color: #2773a7;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s ease-out;
+}
+a:hover{
+    color: #272262;
+}
+
+/*fim da tela de login */

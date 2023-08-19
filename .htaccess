@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+#quando ocorrer um erro 403, redirecione o usuario.
+ErrorDocument 403 index.php
+
+#bloquear a opção de listar os arquivos do diretorio.
+Options -indexes
+
+# bloquear o acesso ao arquivo .env .
+<Files .env>
+    Order allow,deny
+    Deny from allow
+</files>

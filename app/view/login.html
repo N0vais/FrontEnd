@@ -1,0 +1,64 @@
+<!--pagina inicial de login 1/-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-in:</title>
+
+    <link rel="shortcut icon" href="./image/log.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="http://localhost/ERPWEB/assets/css/index-style.css">
+</head>
+
+<body>
+    
+    <form class="todo-container" action="http://localhost/ERPWEB/login/check" method="POST">
+
+        <h1>Login in</h1>
+        <h2>Enter the product system</h2>
+
+        {% if error != ''%}
+            <div class="msg_error" style="color: red; text-align: center;">
+                <span>Login invalido!!</span>
+            </div>
+        {% endif %}
+        
+        <div class='label-float'>
+            <input type='email' name="email" id="login" paceholder="" required >
+            <label id='userLabel' for='login'>Usuario</label>
+        </div>
+        <div class='label-float'>
+            <input type='password' name="senha" id="senha" placeholder="" required>
+            <label id='senhaLabel' for='senha'>Senha</label>
+            <img src="http://localhost/ERPWEB/image/icon/olho.png" class="fa fa-eye" alt="">
+        </div>
+        <div class='justify-center'>
+            <button  type="submit"name="enviar">Enviar</button>
+        </div>
+
+        <div class="new">
+            <p> Novo Usuario ?
+                <a href='#'> Cadastre-se </a>
+            </p>
+        </div>
+  
+        <div class='linha-central'>
+            <hr>
+        </div>
+
+        <footer class="main-footer">
+            <div class="float-right ">
+                <b>Version</b> 3.0.0
+            </div>
+            <strong>Copyright &copy; 2023-2023 By: <a href="#">Daniel Siqueira</a>.</strong> All rights reserved.
+        </footer>
+
+    </form>
+    <script src="http://localhost/ERPWEB/js/index-script.js"></script>
+</body>
+
+</html>
